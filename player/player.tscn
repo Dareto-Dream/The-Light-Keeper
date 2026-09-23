@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dllojuvbiy1kg"]
+
+[ext_resource type="Script" uid="uid://ondrbsym3vyf" path="res://player/player.gd" id="1_oul6g"]
+[ext_resource type="Texture2D" uid="uid://y3ml1c22t0ms" path="res://player/player.png" id="2_rkbax"]
+
+[node name="Player" type="CharacterBody2D" unique_id=842398116]
+motion_mode = 1
+script = ExtResource("1_oul6g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1853357175]
+texture = ExtResource("2_rkbax")
+hframes = 4
+vframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1507551591]
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=562876081]

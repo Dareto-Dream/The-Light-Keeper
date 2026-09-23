@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cj18xby0bu1tk"]
 
 [ext_resource type="PackedScene" uid="uid://c6k5nnpbypshi" path="res://Scripts/nodes/menus/main_menu/main_menu.tscn" id="1_rr1rn"]
-[ext_resource type="Script" uid="uid://bkek1dxg48njk" path="res://scenes/menus/main_menu/main_menu_with_animations.gd" id="2_sr523"]
-[ext_resource type="PackedScene" uid="uid://isodf20gpedt" path="res://scenes/windows/main_menu_options_window.tscn" id="3_ixa71"]
-[ext_resource type="PackedScene" uid="uid://bl78i66px14kc" path="res://scenes/windows/main_menu_credits_window.tscn" id="4_2k5l7"]
+[ext_resource type="Script" uid="uid://bkek1dxg48njk" path="res://Scenes/menus/main_menu/main_menu_with_animations.gd" id="2_sr523"]
+[ext_resource type="PackedScene" uid="uid://isodf20gpedt" path="res://Scenes/windows/main_menu_options_window.tscn" id="3_ixa71"]
+[ext_resource type="PackedScene" uid="uid://bl78i66px14kc" path="res://Scenes/windows/main_menu_credits_window.tscn" id="4_2k5l7"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "Intro"
@@ -291,7 +291,7 @@ graph_offset = Vector2(-180.277, 49)
 
 [node name="MainMenu" unique_id=589811630 instance=ExtResource("1_rr1rn")]
 script = ExtResource("2_sr523")
-game_scene_path = "uid://vsqem1xqyniv"
+game_scene_path = "uid://pyjxplrlk1l8"
 options_packed_scene = ExtResource("3_ixa71")
 credits_packed_scene = ExtResource("4_2k5l7")
 
@@ -323,6 +323,9 @@ lock = true
 
 [node name="VersionContainer" parent="VersionMargin" parent_id_path=PackedInt32Array(1732528471) index="0" unique_id=1603969262]
 modulate = Color(1, 1, 1, 0)
+
+[node name="VersionLabel" parent="VersionMargin/VersionContainer" index="0" unique_id=793266470]
+text = "v0.1.0"
 
 [node name="MouseFilter" type="Control" parent="." index="7" unique_id=33285267]
 layout_mode = 1
